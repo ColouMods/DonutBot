@@ -21,5 +21,8 @@ client.on("guildMemberAdd", (member) => {
     client.channels.find("name","general").send("<@" + member.id + "> has joined the server. ");
 });
   
+client.on("guildMemberRemove", (member) => {
+  client.channels.find("name","general").send(member + " has left the server. ");
+});
   // THIS  MUST  BE  THIS  WAY
   client.login(process.env.BOT_TOKEN);
