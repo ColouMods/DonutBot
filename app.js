@@ -22,7 +22,7 @@ client.on("guildMemberAdd", (member) => {
 });
   
 client.on("guildMemberRemove", (member) => {
-  client.channels.find("name","general").send(member.name + " has left the server. ");
+  client.channels.find("name","general").send(member.user + " has left the server. ");
 });
   // THIS  MUST  BE  THIS  WAY
   client.login(process.env.BOT_TOKEN);
