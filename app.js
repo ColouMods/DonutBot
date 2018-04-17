@@ -8,6 +8,13 @@
  mention = ["You called?", "Yeah?", "What do you need?", "What's up?", "Hi."];
  sorry = ["OK.", "Good.", "You'd better be sorry.", "I forgive you."];
 
+ client.on("guildMemberAdd", (member) => {
+ const guild = member.guild;
+ bot.channels.find("name","general").send("<" + member.id + "has joined the server! ");
+ }
+});
+
+
  client.on('message', message => {
 
  if (message.content.match(/<@435874889467953152>/i)) {
