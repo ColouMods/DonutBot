@@ -9,26 +9,8 @@
  sorry = ["OK.", "Good.", "You'd better be sorry.", "I forgive you."];
 
  client.on('message', message => {
-  	if (message.content.match(/i hope you're prepared for an unforgettable cunt/i))
-  	{
-      	message.channel.sendMessage("1% chance my ass.");
-      	}
-  	if (message.content.match(/petbot is overrated/i))
-  	{
-  	message.reply("Yeah, fuck you too, pal.");
-  	}
- 	 
-   if (message.content.match(/cool it on the constant Steamed Hams references/i))
-  	{
- 		steamNum = (Math.floor(Math.random() * 5)+1);
- 		if (steamNum == 1)
-     		{
-         	message.channel.sendMessage("@Loren Goodwin I'll talk about Steamed Hams wherever I want.");
-     		}	
- 	 }
-  	
-  	
-    	if (message.content.match(/@PetBot/i))
+
+    	if (message.content.match(/<@435874889467953152>/i))
       
   		if (message.content.match(/how are you/i))
   	  {
