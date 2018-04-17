@@ -18,7 +18,7 @@
   });
 
 client.on("guildMemberAdd", (member) => {
-    client.channels.find("name","general").send("<" + member.id + "> has joined the server. ");
+    client.channels.find("name","general").send("<@" + member.id + "> has joined the server. ");
 });
   
   // THIS  MUST  BE  THIS  WAY
