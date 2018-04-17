@@ -11,7 +11,7 @@
  client.on('message', message => {
 
     	if (message.content.match(/<@435874889467953152>/i)) {
-      message.reply("Kinky.");
+      message.reply(": You are not able to !hype for another [time] minutes.");
      }
       
       return;
