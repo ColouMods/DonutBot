@@ -16,6 +16,10 @@
       
       return;
   });
+
+client.on("guildMemberAdd", (member) => {
+  message.channel.send("<@" + member.id + "> has joined the server.");
+});
   
   // THIS  MUST  BE  THIS  WAY
   client.login(process.env.BOT_TOKEN);
