@@ -10,9 +10,9 @@
 
  client.on('message', message => {
 
-    	if (message.content.match(/<@435874889467953152>/i)) {
-      message.channel.send("<@" + message.author.id + ">: You are not able to !hype for another [time] minutes.");
-     }
+ if (message.content.match(/<@435874889467953152>/i)) {
+  message.channel.send("<@" + message.author.id + ">: You are not able to `!hype` for another [time] minutes.");
+ }
       
       return;
   });
