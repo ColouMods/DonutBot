@@ -18,8 +18,7 @@
   });
 
 client.on("guildMemberAdd", (member) => {
-    const defaultChannel = guild.channels.find(c=> c.permissionsFor(guild.me).has("SEND_MESSAGES"));
-    defaultChannel.send("<@" + member.id + "> has joined the server.");
+    client.channels.find("name","general").send("<" + member.id + "has joined the server. ");
 });
   
   // THIS  MUST  BE  THIS  WAY
