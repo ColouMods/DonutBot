@@ -9,7 +9,7 @@
  sorry = ["OK.", "Good.", "You'd better be sorry.", "I forgive you."];
 
  client.on('message', message => {
-
+//steamed commits
  if (message.content.match(/<@435874889467953152>/i)) {
   message.channel.send("<@" + message.author.id + ">: You are not able to `!hype` for another [time] minutes.");
  }
