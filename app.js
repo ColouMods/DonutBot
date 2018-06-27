@@ -21,7 +21,7 @@
   });
 
 client.on("guildMemberAdd", (member) => {
-    client.channels.find("name","general").send("<@" + member.id + "> has joined the server. ");
+    client.channels.find("name","general").send("Somebody once told me that <@" + member.id + "> has joined the server. ");
 });
   
 client.on("guildMemberRemove", (member) => {
