@@ -15,7 +15,7 @@
   message.channel.send("<@" + message.author.id + ">: You are not able to `!hype` for another [time] minutes.");
  }
  if (message.content.match(/hey donutbot/i)) {
-  message.channel.send(greet[(Math.floor(Math.random() * greet.length)+1)] + " " + message.author.username + ", " + greet2[(Math.floor(Math.random() * greet2.length)+1)]);
+  message.channel.send(greet[(Math.floor(Math.random() * greet.length))] + " " + message.author.username + ", " + greet2[(Math.floor(Math.random() * greet2.length))]);
  } 
       return;
   });
