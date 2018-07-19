@@ -20,8 +20,9 @@ client.on('message', message => {
 		if (command === 'say') {
 			//change the splitter to colon from space, 
 			let sayChannel = args.slice(1);
-			let text = args.slice(2).join(" ");
-			message.sayChannel.sendMessage(text);
+			//let text = args.slice(2).join(" ");
+			message.reply(sayChannel);
+			//message.sayChannel.sendMessage(text);
 		}
 		//if (message.content.match(/hey donutbot/i)) {
 		//message.channel.send(greet[(Math.floor(Math.random() * greet.length))] + " " + message.author.username + ", " + greet2[(Math.floor(Math.random() * greet2.length))]);
