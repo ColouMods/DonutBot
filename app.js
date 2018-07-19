@@ -20,7 +20,7 @@ client.on('message', message => {
 		if (command === 'say') {
 			//change the splitter to colon from space,
 			let eatPant = args.slice(0);
-			let sayChannel = args.slice(1);
+			
 			//let text = args.slice(2).join(" ");
 			message.channel.sendMessage(eatPant);
 			//message.sayChannel.sendMessage(text);
