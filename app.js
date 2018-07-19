@@ -11,12 +11,17 @@ console.log('I am ready!');
 });
 
 client.on('message', message => {
-//steamed commits
 	if (message.content.startsWith(prefix)) {
 		const args = message.content.slice(prefix.length).trim().split(/ +/g);
 		const command = args.shift().toLowerCase();
 		if (command === 'hype') {
 			message.channel.send("<@" + message.author.id + ">: You are not able to `!hype` for another [time] minutes.");
+		}
+		if (command === 'say') {
+			//change the splitter to colon from space, 
+			let sayChannel = args.slice(0);
+			let text = args.slice(1).join(" ");
+			message.sayChannel.sendMessage(text);
 		}
 		//if (message.content.match(/hey donutbot/i)) {
 		//message.channel.send(greet[(Math.floor(Math.random() * greet.length))] + " " + message.author.username + ", " + greet2[(Math.floor(Math.random() * greet2.length))]);
