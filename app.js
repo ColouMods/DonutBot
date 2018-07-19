@@ -7,20 +7,20 @@ const command = args.shift().toLowerCase();
 
 client.on('ready', () => {
 console.log('I am ready!');
-     client.users.get('290486859480563713').sendMessage("Donut Bot Initialised");
-     client.user.setPresence({game: {name: "Super Mario Kart", type: 0}});
-     });
+	client.users.get('290486859480563713').sendMessage("Donut Bot Initialised");
+	client.user.setPresence({game: {name: "Super Mario Kart", type: 0}});
+});
 
 client.on('message', message => {
 //steamed commits
-	if(message.content.startsWith(prefix)) {
-		if (command==='hype') {
+	if (message.content.startsWith(prefix)) {
+		if (command === 'hype') {
 			message.channel.send("<@" + message.author.id + ">: You are not able to `!hype` for another [time] minutes.");
 		}
-		if (message.content.match(/hey donutbot/i)) {
-		message.channel.send(greet[(Math.floor(Math.random() * greet.length))] + " " + message.author.username + ", " + greet2[(Math.floor(Math.random() * greet2.length))]);
-		} 
-		return;
+		//if (message.content.match(/hey donutbot/i)) {
+		//message.channel.send(greet[(Math.floor(Math.random() * greet.length))] + " " + message.author.username + ", " + greet2[(Math.floor(Math.random() * greet2.length))]);
+		//} 
+		//return;
 	}
 });
 
