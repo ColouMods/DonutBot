@@ -20,9 +20,7 @@ client.on('message', message => {
 		if (command === 'say') {
 			//change the splitter to colon from space,
 			let sayChannel = args[0];
-			let text = args[1]
-			//let text = args.slice(2).join(" ");
-			message.channel.send('Saying "' + text + '" in the channel with ID of ' + sayChannel + '.');
+			let text = args[1];
 			client.channels.get(sayChannel).sendMessage(text);
 		}
 		//if (message.content.match(/hey donutbot/i)) {
