@@ -19,10 +19,10 @@ client.on('message', message => {
 		}
 		if (command === 'say') {
 			//change the splitter to colon from space,
-			let eatPant = args.slice(0);
-			
+			let eatPant = args[0]
+			let sayChannel = args[1];
 			//let text = args.slice(2).join(" ");
-			message.channel.sendMessage(eatPant);
+			message.channel.sendMessage(eatPant + sayChannel);
 			//message.sayChannel.sendMessage(text);
 		}
 		//if (message.content.match(/hey donutbot/i)) {
