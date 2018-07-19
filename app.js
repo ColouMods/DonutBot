@@ -3,7 +3,7 @@
   
   client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setActivity({game: {name: "a bad mod", type: 0}});
+    client.user.setPresence({game: {name: "a bad mod", type: 0}});
   });
  greet = ["Hello", "Hi", "Hey"];
  greet2 = ["how's it going?", "what's up?", "I don't really like you, to be honest."];
