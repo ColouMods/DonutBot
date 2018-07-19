@@ -22,7 +22,7 @@ client.on('message', message => {
 			let sayChannel = args[0];
 			let text = args[1]
 			//let text = args.slice(2).join(" ");
-			message.channels.get(sayChannel).sendMessage(text);
+			message.channels.get('sayChannel').sendMessage(text);
 			//message.sayChannel.sendMessage(text);
 		}
 		//if (message.content.match(/hey donutbot/i)) {
