@@ -18,10 +18,11 @@ client.on('message', message => {
 			message.channel.send("<@" + message.author.id + ">: You are not able to `!hype` for another [time] minutes.");
 		}
 		if (command === 'say') {
-			//change the splitter to colon from space, 
+			//change the splitter to colon from space,
+			let eatPant = args.slice(0);
 			let sayChannel = args.slice(1);
 			//let text = args.slice(2).join(" ");
-			message.reply(sayChannel);
+			message.reply(eatPant + sayChannel);
 			//message.sayChannel.sendMessage(text);
 		}
 		//if (message.content.match(/hey donutbot/i)) {
