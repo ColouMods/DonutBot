@@ -22,8 +22,8 @@ client.on('message', message => {
 			let sayChannel = args[0];
 			let text = args[1]
 			//let text = args.slice(2).join(" ");
-			message.channel.send(sayChannel + " " + text);
-			//client.channels.get('sayChannel').sendMessage(text);
+			message.channel.send('Saying "' + text + '" in the channel with ID of ' + sayChannel + '.');
+			client.channels.get('sayChannel').sendMessage(text);
 		}
 		//if (message.content.match(/hey donutbot/i)) {
 		//message.channel.send(greet[(Math.floor(Math.random() * greet.length))] + " " + message.author.username + ", " + greet2[(Math.floor(Math.random() * greet2.length))]);
