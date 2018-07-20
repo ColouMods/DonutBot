@@ -6,7 +6,7 @@ const prefix = "!";
 
 client.on('ready', () => {
 console.log('I am ready!');
-	client.users.get('290486859480563713').sendMessage("Donut Bot Initialised");
+	client.channels.get('435574865714479124').sendMessage("Donut Bot Initialised");
 	client.user.setPresence({game: {name: "Super Mario Kart", type: 0}});
 });
 
