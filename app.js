@@ -18,7 +18,7 @@ client.on('message', message => {
 			message.channel.send("<@" + message.author.id + ">: You are not able to `!hype` for another [time] minutes.");
 		}
 		if (command === 'say') {
-			let sayChannel = sayArgs[0];
+			let sayChannel = args[0];
 			let text = args[1];
 			client.channels.get(sayChannel).sendMessage(text);
 		}
