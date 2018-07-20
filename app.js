@@ -30,11 +30,11 @@ client.on('message', message => {
 });
 
 client.on("guildMemberAdd", (member) => {
-    client.channels.find("name","general").send("Somebody once told me that <@" + member.id + "> has joined the server. ");
+    guild.channels.find("name","general").send("Somebody once told me that <@" + member.id + "> has joined the server. ");
 });
   
 client.on("guildMemberRemove", (member) => {
-  client.channels.find("name","general").send(member.username + " has left the server. ");
+  guild.channels.find("name","general").send(member.username + " has left the server. ");
 });
 
 devs = ["333710766706524167", "290486859480563713", "259458435484090369"];
